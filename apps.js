@@ -6,9 +6,12 @@ const poemOb = {
 }
 
 const mashup = () => {
-  let poem = ''
-  let firstLine = poemOb.firstLines[Math.floor(Math.random() * 3)]
-  console.log(firstLine)
+  let poem = [''];
+  let firstLine = poemOb.firstLines[Math.floor(Math.random() * 3)];
+  let secondLine = poemOb.secondLines[Math.floor(Math.random() * 3)];
+  let thirdLine = poemOb.thirdLines[Math.floor(Math.random() * 3)];
+  poem.push(firstLine + secondLine + thirdLine);
+  return poem;
   
 }
 
